@@ -1,0 +1,151 @@
+PLAYER_ID,PLAYER_NAME,TEAM_NAME,TEAM_ID,POSITION
+1629027,Trae Young,Atlanta Hawks,1610612737,PG
+1630700,Dyson Daniels,Atlanta Hawks,1610612737,SG
+1642258,Zaccharie Risacher,Atlanta Hawks,1610612737,SF
+1630552,Jalen Johnson,Atlanta Hawks,1610612737,PF
+203991,Clint Capela,Atlanta Hawks,1610612737,C
+201950,Jrue Holiday,Boston Celtics,1610612738,PG
+1628401,Derrick White,Boston Celtics,1610612738,SG
+1627759,Jaylen Brown,Boston Celtics,1610612738,SF
+1628369,Jayson Tatum,Boston Celtics,1610612738,PF
+204001,Kristaps Porziņģis,Boston Celtics,1610612738,C
+203471,Dennis Schröder,Brooklyn Nets,1610612751,PG
+1630560,Cam Thomas,Brooklyn Nets,1610612751,SG
+1629661,Cameron Johnson,Brooklyn Nets,1610612751,SF
+1627827,Dorian Finney-Smith,Brooklyn Nets,1610612751,PF
+1629651,Nic Claxton,Brooklyn Nets,1610612751,C
+1630163,LaMelo Ball,Charlotte Hornets,1610612766,PG
+1641706,Brandon Miller,Charlotte Hornets,1610612766,SG
+1631093,Jaden Ivey,Charlotte Hornets,1610612766,SF
+1628970,Miles Bridges,Charlotte Hornets,1610612766,PF
+1631109,Mark Williams,Charlotte Hornets,1610612766,C
+1630581,Josh Giddey,Chicago Bulls,1610612741,PG
+1629632,Coby White,Chicago Bulls,1610612741,SG
+203897,Zach LaVine,Chicago Bulls,1610612741,SF
+1630172,Patrick Williams,Chicago Bulls,1610612741,PF
+202696,Nikola Vučević,Chicago Bulls,1610612741,C
+1629636,Darius Garland,Cleveland Cavaliers,1610612739,PG
+1628378,Donovan Mitchell,Cleveland Cavaliers,1610612739,SG
+1630171,Isaac Okoro,Cleveland Cavaliers,1610612739,SF
+1630596,Evan Mobley,Cleveland Cavaliers,1610612739,PF
+1628386,Jarrett Allen,Cleveland Cavaliers,1610612739,C
+1629029,Luka Dončić,Dallas Mavericks,1610612742,PG
+202681,Kyrie Irving,Dallas Mavericks,1610612742,SG
+202691,Klay Thompson,Dallas Mavericks,1610612742,SF
+1629023,P.J. Washington,Dallas Mavericks,1610612742,PF
+1641726,Dereck Lively II,Dallas Mavericks,1610612742,C
+1627750,Jamal Murray,Denver Nuggets,1610612743,PG
+1631128,Christian Braun,Denver Nuggets,1610612743,SG
+1629008,Michael Porter Jr.,Denver Nuggets,1610612743,SF
+203932,Aaron Gordon,Denver Nuggets,1610612743,PF
+203999,Nikola Jokić,Denver Nuggets,1610612743,C
+1630595,Cade Cunningham,Detroit Pistons,1610612765,PG
+1631093,Jaden Ivey,Detroit Pistons,1610612765,SG
+203501,Tim Hardaway Jr.,Detroit Pistons,1610612765,SF
+202699,Tobias Harris,Detroit Pistons,1610612765,PF
+1631105,Jalen Duren,Detroit Pistons,1610612765,C
+201939,Stephen Curry,Golden State Warriors,1610612744,PG
+1641764,Brandin Podziemski,Golden State Warriors,1610612744,SG
+203952,Andrew Wiggins,Golden State Warriors,1610612744,SF
+1630228,Jonathan Kuminga,Golden State Warriors,1610612744,PF
+1626172,Kevon Looney,Golden State Warriors,1610612744,C
+1627832,Fred VanVleet,Houston Rockets,1610612745,PG
+1630224,Jalen Green,Houston Rockets,1610612745,SG
+1628415,Dillon Brooks,Houston Rockets,1610612745,SF
+1631095,Jabari Smith Jr.,Houston Rockets,1610612745,PF
+1630578,Alperen Sengun,Houston Rockets,1610612745,C
+1630169,Tyrese Haliburton,Indiana Pacers,1610612754,PG
+1629614,Andrew Nembhard,Indiana Pacers,1610612754,SG
+1631097,Bennedict Mathurin,Indiana Pacers,1610612754,SF
+1627783,Pascal Siakam,Indiana Pacers,1610612754,PF
+1626167,Myles Turner,Indiana Pacers,1610612754,C
+201935,James Harden,Los Angeles Clippers,1610612746,PG
+1627739,Kris Dunn,Los Angeles Clippers,1610612746,SG
+1626181,Norman Powell,Los Angeles Clippers,1610612746,SF
+1630538,Bones Hyland,Los Angeles Clippers,1610612746,PF
+1627826,Ivica Zubac,Los Angeles Clippers,1610612746,C
+1630559,Austin Reaves,Los Angeles Lakers,1610612747,PG
+1642261,Dalton Knecht,Los Angeles Lakers,1610612747,SG
+1629060,Rui Hachimura,Los Angeles Lakers,1610612747,SF
+2544,LeBron James,Los Angeles Lakers,1610612747,PF
+203076,Anthony Davis,Los Angeles Lakers,1610612747,C
+1629630,Ja Morant,Memphis Grizzlies,1610612763,PG
+1630217,Desmond Bane,Memphis Grizzlies,1610612763,SG
+1642377,Jaylen Wells,Memphis Grizzlies,1610612763,SF
+1628991,Jaren Jackson Jr.,Memphis Grizzlies,1610612763,PF
+1629634,Brandon Clarke,Memphis Grizzlies,1610612763,C
+1629639,Tyler Herro,Miami Heat,1610612748,PG
+1629130,Duncan Robinson,Miami Heat,1610612748,SG
+202710,Jimmy Butler,Miami Heat,1610612748,SF
+1629312,Haywood Highsmith,Miami Heat,1610612748,PF
+1628389,Bam Adebayo,Miami Heat,1610612748,C
+203081,Damian Lillard,Milwaukee Bucks,1610612749,PG
+203114,Khris Middleton,Milwaukee Bucks,1610612749,SG
+1627752,Taurean Prince,Milwaukee Bucks,1610612749,SF
+203507,Giannis Antetokounmpo,Milwaukee Bucks,1610612749,PF
+201572,Brook Lopez,Milwaukee Bucks,1610612749,C
+201144,Mike Conley,Minnesota Timberwolves,1610612750,PG
+1630162,Anthony Edwards,Minnesota Timberwolves,1610612750,SG
+1631093,Jaden Ivey,Minnesota Timberwolves,1610612750,SF
+203944,Julius Randle,Minnesota Timberwolves,1610612750,PF
+203497,Rudy Gobert,Minnesota Timberwolves,1610612750,C
+1627749,Dejounte Murray,New Orleans Pelicans,1610612740,PG
+203468,CJ McCollum,New Orleans Pelicans,1610612740,SG
+1630530,Trey Murphy III,New Orleans Pelicans,1610612740,SF
+1630529,Herbert Jones,New Orleans Pelicans,1610612740,PF
+1642274,Yves Missi,New Orleans Pelicans,1610612740,C
+1628973,Jalen Brunson,New York Knicks,1610612752,PG
+1629680,Matisse Thybulle,New York Knicks,1610612752,SG
+1628404,Josh Hart,New York Knicks,1610612752,SF
+1628384,OG Anunoby,New York Knicks,1610612752,PF
+1626157,Karl-Anthony Towns,New York Knicks,1610612752,C
+1628983,Shai Gilgeous-Alexander,Oklahoma City Thunder,1610612760,PG
+1631096,Chet Holmgren,Oklahoma City Thunder,1610612760,SG
+1629652,Luguentz Dort,Oklahoma City Thunder,1610612760,SF
+1631114,Jalen Williams,Oklahoma City Thunder,1610612760,PF
+1628392,Isaiah Hartenstein,Oklahoma City Thunder,1610612760,C
+1630591,Jalen Suggs,Orlando Magic,1610612753,PG
+203484,Kentavious Caldwell-Pope,Orlando Magic,1610612753,SG
+1641783,Tristan da Silva,Orlando Magic,1610612753,SF
+1628976,Wendell Carter Jr.,Orlando Magic,1610612753,PF
+1629048,Goga Bitadze,Orlando Magic,1610612753,C
+1630178,Tyrese Maxey,Philadelphia 76ers,1610612755,PG
+1626162,Kelly Oubre Jr.,Philadelphia 76ers,1610612755,SG
+202331,Paul George,Philadelphia 76ers,1610612755,SF
+1627824,Guerschon Yabusele,Philadelphia 76ers,1610612755,PF
+203954,Joel Embiid,Philadelphia 76ers,1610612755,C
+1626145,Tyus Jones,Phoenix Suns,1610612756,PG
+1626164,Devin Booker,Phoenix Suns,1610612756,SG
+203078,Bradley Beal,Phoenix Suns,1610612756,SF
+201142,Kevin Durant,Phoenix Suns,1610612756,PF
+203994,Jusuf Nurkić,Phoenix Suns,1610612756,C
+1629014,Anfernee Simons,Portland Trail Blazers,1610612757,PG
+1631101,Shaedon Sharpe,Portland Trail Blazers,1610612757,SG
+1641739,Toumani Camara,Portland Trail Blazers,1610612757,SF
+203924,Jerami Grant,Portland Trail Blazers,1610612757,PF
+1629028,Deandre Ayton,Portland Trail Blazers,1610612757,C
+1628368,De'Aaron Fox,Sacramento Kings,1610612758,PG
+1628370,Malik Monk,Sacramento Kings,1610612758,SG
+201942,DeMar DeRozan,Sacramento Kings,1610612758,SF
+1631099,Keegan Murray,Sacramento Kings,1610612758,PF
+1627734,Domantas Sabonis,Sacramento Kings,1610612758,C
+101108,Chris Paul,San Antonio Spurs,1610612759,PG
+1630170,Devin Vassell,San Antonio Spurs,1610612759,SG
+203084,Harrison Barnes,San Antonio Spurs,1610612759,SF
+1631110,Jeremy Sochan,San Antonio Spurs,1610612759,PF
+1641705,Victor Wembanyama,San Antonio Spurs,1610612759,C
+1630567,Scottie Barnes,Toronto Raptors,1610612761,PG
+1641711,Gradey Dick,Toronto Raptors,1610612761,SG
+1629628,RJ Barrett,Toronto Raptors,1610612761,SF
+1630534,Ochai Agbaji,Toronto Raptors,1610612761,PF
+1627751,Jakob Pöltl,Toronto Raptors,1610612761,C
+1641718,Keyonte George,Utah Jazz,1610612762,PG
+1629012,Collin Sexton,Utah Jazz,1610612762,SG
+1628374,Lauri Markkanen,Utah Jazz,1610612762,SF
+1628381,John Collins,Utah Jazz,1610612762,PF
+1631117,Walker Kessler,Utah Jazz,1610612762,C
+1629673,Jordan Poole,Washington Wizards,1610612764,PG
+1627763,Malcolm Brogdon,Washington Wizards,1610612764,SG
+1641731,Bilal Coulibaly,Washington Wizards,1610612764,SF
+1628398,Kyle Kuzma,Washington Wizards,1610612764,PF
+1642259,Alexandre Sarr,Washington Wizards,1610612764,C
