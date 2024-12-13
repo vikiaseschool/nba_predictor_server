@@ -244,10 +244,10 @@ def get_prediction(team_name, opp_team_name, date):
     make_match_csv(team_id, opp_team_id, date)
     get_match_csv_ready(team_name, opp_team_name, date)
 
-    rf_wl = joblib.load('rf_wl_model.pkl')
-    rf_pts = joblib.load('rf_pts_model.pkl')
-    rf_pts_o = joblib.load('rf_pts_o_model.pkl')
-    imputer = joblib.load('imputer_model.pkl')
+    rf_wl = joblib.load('/home/vikiase/nba_predictor_server/rf_wl_model.pkl')
+    rf_pts = joblib.load('/home/vikiase/nba_predictor_server/rf_pts_model.pkl')
+    rf_pts_o = joblib.load('/home/vikiase/nba_predictor_server/rf_pts_o_model.pkl')
+    imputer = joblib.load('/home/vikiase/nba_predictor_server/imputer_model.pkl')
 
     match_ready = pd.read_csv('/tmp/match_ready.csv')
     required_features = imputer.feature_names_in_
@@ -266,14 +266,14 @@ def get_prediction(team_name, opp_team_name, date):
     # PLAYERS PREDICTION
 
     get_player_csv_ready(team_name, opp_team_name, date)
-    player_imputer = joblib.load('imputer_model_player.pkl')
-    scaler = joblib.load('scaler_model_player.pkl')
-    model_pts = joblib.load('linear_regression_pts_model.pkl')
-    model_reb = joblib.load('linear_regression_reb_model.pkl')
-    model_ast = joblib.load('linear_regression_ast_model.pkl')
+    player_imputer = joblib.load('/home/vikiase/nba_predictor_server/imputer_model_player.pkl')
+    scaler = joblib.load('/home/vikiase/nba_predictor_server/scaler_model_player.pkl')
+    model_pts = joblib.load('/home/vikiase/nba_predictor_server/linear_regression_pts_model.pkl')
+    model_reb = joblib.load('/home/vikiase/nba_predictor_server/linear_regression_reb_model.pkl')
+    model_ast = joblib.load('/home/vikiase/nba_predictor_server/linear_regression_ast_model.pkl')
 
     data = pd.read_csv('/tmp/match_ready_players.csv')
-    columns = joblib.load('columns.pkl')
+    columns = joblib.load('/home/vikiase/nba_predictor_server/columns.pkl')
 
     player_data = data[columns]
     player_data_imputed = player_imputer.transform(player_data)
