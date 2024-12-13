@@ -18,7 +18,7 @@ def get_name(team_id):
 
 
 def make_match_csv(team_id, opp_team_id, date):
-    puvodni = pd.read_csv('csv_files/combined_games_2021_2025.csv')
+    puvodni = pd.read_csv('/home/vikiase/nba_predictor_server/csv_files/combined_games_2021_2025.csv')
     match_df = pd.DataFrame(columns=puvodni.columns)
 
     new_row = {
@@ -35,7 +35,7 @@ def make_match_csv(team_id, opp_team_id, date):
 
 
 def get_match_csv_ready(team_name, opp_team_name, date):
-    games_df = pd.read_csv('csv_files/combined_games_2021_2025.csv')
+    games_df = pd.read_csv('/home/vikiase/nba_predictor_server/csv_files/combined_games_2021_2025.csv')
     match_df = pd.read_csv('/tmp/match_info.csv')
     team_id = get_id(team_name)
     opp_team_id = get_id(opp_team_name)
@@ -149,13 +149,13 @@ def get_match_csv_ready(team_name, opp_team_name, date):
 
 def get_player_csv_ready(team_name, opp_team_name, date):
     # filter players for this match
-    starters = pd.read_csv('csv_files/nba_starting_lineups.csv')
+    starters = pd.read_csv('/home/vikiase/nba_predictor_server/csv_files/nba_starting_lineups.csv')
     match_players = pd.DataFrame(columns=starters.columns)
     team_players = starters[(starters['TEAM_NAME'] == team_name) | (starters['TEAM_NAME'] == opp_team_name)]
     match_starting_players = pd.concat([match_players, team_players], ignore_index=True)
 
     # make pandas series similar to the testing one.
-    logs = pd.read_csv("csv_files/players_stats_24-25_final.csv")
+    logs = pd.read_csv("/home/vikiase/nba_predictor_server/csv_files//players_stats_24-25_final.csv")
     match_players_performance = pd.DataFrame(columns=logs.columns)
     for _, player in match_starting_players.iterrows():
         player_data = {
@@ -173,7 +173,7 @@ def get_player_csv_ready(team_name, opp_team_name, date):
 
     def add_last_5():
         match_players = pd.read_csv('/tmp/match_players.csv')
-        player_stats = pd.read_csv('csv_files/players_stats_24-25_final.csv')
+        player_stats = pd.read_csv('/home/vikiase/nba_predictor_server/csv_files//players_stats_24-25_final.csv')
 
         stats_to_average = [
             "WL", "MIN", "FGM", "FGA", "FG_PCT", "FG3M", "FG3A", "FG3_PCT",
@@ -309,7 +309,7 @@ def get_prediction(team_name, opp_team_name, date):
 
 
 def get_stats(team_name, opp_team_name, date):
-    games_df = pd.read_csv('csv_files/combined_games_2021_2025.csv')
+    games_df = pd.read_csv('/home/vikiase/nba_predictor_server/csv_files/combined_games_2021_2025.csv')
     match_df = pd.read_csv('/tmp/match_info.csv')
 
     team_id = get_id(team_name)
