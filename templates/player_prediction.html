@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Results Predictor - Player Predictions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin: 20px;
+            color: #333;
+        }
+
+        .team-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 85%;
+            max-width: 1200px;
+            margin: 30px auto;
+            flex-wrap: wrap;
+        }
+
+        .team-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 45%;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .team-box img {
+            width: 120px;
+            height: 120px;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        th {
+            background-color: #f1f1f1;
+            color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .button-container {
+            margin-top: 40px;
+        }
+
+        button {
+            padding: 12px 24px;
+            font-size: 18px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 200px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 14px;
+            color: #888;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .team-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .team-box {
+                width: 90%;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Player Predictions</h1>
+
+<div class="team-container">
+    <div class="team-box">
+        <h2>{{ home_team }}</h2>
+        <img src="{{ url_for('static', filename='logos/' + home_team|replace(' ', '-')|lower + '-logo.png') }}" alt="{{ home_team }} Logo">
+        <table>
+            <thead>
+                <tr>
+                    <th>Stat</th>
+                    <th>{{ home_players[0] }}</th>
+                    <th>{{ home_players[1] }}</th>
+                    <th>{{ home_players[2] }}</th>
+                    <th>{{ home_players[3] }}</th>
+                    <th>{{ home_players[4] }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PTS</td>
+                    <td>{{ home_pts[0] }}</td>
+                    <td>{{ home_pts[1] }}</td>
+                    <td>{{ home_pts[2] }}</td>
+                    <td>{{ home_pts[3] }}</td>
+                    <td>{{ home_pts[4] }}</td>
+                </tr>
+                <tr>
+                    <td>REB</td>
+                    <td>{{ home_reb[0] }}</td>
+                    <td>{{ home_reb[1] }}</td>
+                    <td>{{ home_reb[2] }}</td>
+                    <td>{{ home_reb[3] }}</td>
+                    <td>{{ home_reb[4] }}</td>
+                </tr>
+                <tr>
+                    <td>AST</td>
+                    <td>{{ home_ast[0] }}</td>
+                    <td>{{ home_ast[1] }}</td>
+                    <td>{{ home_ast[2] }}</td>
+                    <td>{{ home_ast[3] }}</td>
+                    <td>{{ home_ast[4] }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="team-box">
+        <h2>{{ away_team }}</h2>
+        <img src="{{ url_for('static', filename='logos/' + away_team|replace(' ', '-')|lower + '-logo.png') }}" alt="{{ away_team }} Logo">
+        <table>
+            <thead>
+                <tr>
+                    <th>Stat</th>
+                    <th>{{ away_players[0] }}</th>
+                    <th>{{ away_players[1] }}</th>
+                    <th>{{ away_players[2] }}</th>
+                    <th>{{ away_players[3] }}</th>
+                    <th>{{ away_players[4] }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PTS</td>
+                    <td>{{ away_pts[0] }}</td>
+                    <td>{{ away_pts[1] }}</td>
+                    <td>{{ away_pts[2] }}</td>
+                    <td>{{ away_pts[3] }}</td>
+                    <td>{{ away_pts[4] }}</td>
+                </tr>
+                <tr>
+                    <td>REB</td>
+                    <td>{{ away_reb[0] }}</td>
+                    <td>{{ away_reb[1] }}</td>
+                    <td>{{ away_reb[2] }}</td>
+                    <td>{{ away_reb[3] }}</td>
+                    <td>{{ away_reb[4] }}</td>
+                </tr>
+                <tr>
+                    <td>AST</td>
+                    <td>{{ away_ast[0] }}</td>
+                    <td>{{ away_ast[1] }}</td>
+                    <td>{{ away_ast[2] }}</td>
+                    <td>{{ away_ast[3] }}</td>
+                    <td>{{ away_ast[4] }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="button-container">
+    <button onclick="window.history.back()">Back</button>
+</div>
+
+<footer>
+    <p>V2.0 Models made and tested by @vikiase</p>
+</footer>
+
+</body>
+</html>
