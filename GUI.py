@@ -149,7 +149,7 @@ def player_prediction():
 @app.route('/submit_feedback', methods=['POST'])
 def submit_feedback():
     feedback_data = request.get_json()
-    with open('tmp/reviews.txt', 'a') as file:
+    with open('/tmp/reviews.txt', 'a') as file:
         file.write(json.dumps(feedback_data) + '\n')
     return jsonify({"message": "Feedback submitted successfully!"})
 
