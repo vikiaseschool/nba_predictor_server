@@ -1,0 +1,10 @@
+Flask  
+pandas 
+numpy  
+nba_api
+joblib
+scikit-learn
+imbalanced-learn
+
+
+
